@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <h1>Press any drumkey for drum beats!!</h1>
+        </div>
+
+        <div class="container" id="containerId">
+            <button data-drumSound="boom" data-drumkey="boom" class="sounds" >
+                <audio data-drumSound="boom" data-drumkey="boom" src="/drumkit challenge/sounds/sounds/boom.wav"></audio>
+                <h2>A</h2>
+                <p>Boom</p>
+            </button>
+
+            <button data-drumSound="clap" class="sounds">
+                <audio data-drumSound="clap" id="myAudio1" src="/drumkit challenge/sounds/sounds/clap.wav"></audio>
+                <h2>S</h2>
+                <p>Clap</p>
+            </button>
+
+            <button data-drumSound="hihat" class="sounds">
+                <audio data-drumSound="hihat" id="myAudio1" src="/drumkit challenge/sounds/sounds/hihat.wav"></audio>
+                <h2>D</h2>
+                <p>Hihat</p>
+            </button>
+
+            <button data-drumSound="click" class="sounds">
+                <audio data-drumSound="click" id="myAudio1" src="/drumkit challenge/sounds/sounds/kick.wav"></audio>
+                <h2>F</h2>
+                <p>kick</p>
+            </button>
+
+            <button data-drumSound="opehat" class="sounds">
+                <audio data-drumSound="opehat" id="myAudio1" src="/drumkit challenge/sounds/sounds/openhat.wav"></audio>                <h2>G</h2>
+                <p>opehat</p>
+            </button>
+
+            <button data-drumSound="ride" class="sounds">
+                <audio data-drumSound="ride" id="myAudio1" src="/drumkit challenge/sounds/sounds/ride.wav"></audio>                <h2>H</h2>
+                <p>Ride</p>
+            </button>
+
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
