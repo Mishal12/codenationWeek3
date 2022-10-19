@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="firstPlayer">
+            <h1>Player1</h1>
+            <h1 id="score1">0</h1>
+            <div>
+                <p>Current Score</p>
+                <h1 id="currentScore1"></h1>
+            </div>
+        </div>
+        <div class="middlePart">
+            <button id="restart">Restart</button>
+            <img id="diceImg1" src="/dice challenge second player/images/dice1.png" alt="" hidden>
+            <img id="diceImg2" src="/dice challenge second player/images/dice2.png" alt="" hidden>
+            <img id="diceImg3" src="/dice challenge second player/images/dice3.png" alt="" hidden>
+            <img id="diceImg4" src="/dice challenge second player/images/dice4.png" alt="" hidden>
+            <img id="diceImg5" src="/dice challenge second player/images/dice5.png" alt="" hidden>
+            <img id="diceImg6" src="/dice challenge second player/images/dice6.png" alt="" hidden>
+            <h1 id="changePlayer">Player 1 to roll</h1>
+            <button onclick="rollDice()">Roll</button>
+            <button  id="holdBtn">Hold</button>
+            </div>
+
+        <div class="secondPlayer">
+            <h1>Player2</h1>
+            <h1 id="score2">0</h1>
+            <div>
+                <p>Current Score</p>
+                <h1 id="currentScore2"></h1>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" async defer></script>
+</body>
+
+</html>

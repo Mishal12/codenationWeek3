@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+  .dicePart, .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.heading h1{
+
+    color: darkgoldenrod;
+    text-decoration: none;
+    font-size: 34px;
+    cursor: pointer;
+}
+
+.heading h1:hover{
+    color: darkorange
+}
+
+.dicePart img{
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* display: none; */
+}
+
+.container {
+    flex-direction: column;
+    border: 3px solid darkgoldenrod;
+    width: 600px;
+    height: 200px;
+    background-color: darkgoldenrod;
+}
+
+.rollPlayer{
+    width: 400px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.dicePlayer {
+    margin: 30px;
+}
+
+.dicePlayer button{
+    background-color: darkseagreen;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: black;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 9px #999;
+}
+
+.dicePlayer button:hover{
+    background-color: #3e8e41;
+}
+
+.dicePlayer button:active{
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* Player 1 container */
+
+#player1-container{
+    display: flex;
+    flex-direction: column;
+    background-color: darkgoldenrod;
+}
+
+
+

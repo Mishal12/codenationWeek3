@@ -11,26 +11,30 @@ playSound = (audioTag) => {
     audioTag.play()
 }
 
-
-// sounds.forEach((sound)=>{
-//     sound.addEventListener('keypress', ()=>{
-//         let drumkey = document.querySelector(`audio[data-drumkey="${sound.dataset.drumkey}"]`)
-//         playSoundKey(drumkey)
-//     })
-// })
-
-// playSoundKey = (audioKeyTag) =>{
-
-//     if(event.key=="a"){
-//         audioKeyTag.play();
-//     }
-//         else if(event.key=="s"){
-//             audioKeyTag.play()
-//     }else
-//     alert("Press above key mentioned")
-// }
-
-
+document.addEventListener('keypress', (event) => {
+    let drumkey
+    switch (event.key) {
+        case "a":
+            drumkey = document.querySelector(`audio[data-drumSound="boom"]`)
+            break;
+        case "s":
+            drumkey = document.querySelector(`audio[data-drumSound="clap"]`)
+            break
+        case "d":
+            drumkey = document.querySelector(`audio[data-drumSound="hihat"]`)
+            break
+        case "f":
+            drumkey = document.querySelector(`audio[data-drumSound="click"]`)
+            break
+        case "g":
+            drumkey = document.querySelector(`audio[data-drumSound="opehat"]`)
+            break
+        case "h":
+            drumkey = document.querySelector(`audio[data-drumSound="ride"]`)
+            break
+    }
+    playSound(drumkey)
+})
 
 
 
