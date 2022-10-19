@@ -75,7 +75,7 @@ holdBtn.addEventListener('click', () => {
                 () =>{
                     alert("Player 2 wins")
                 }
-            ,1)
+            )
 
         } else {
             document.getElementById('score2').innerHTML = totalScore2
